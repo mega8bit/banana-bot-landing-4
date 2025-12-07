@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="description" content="Главная страница">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <style id="inline-css">
+        blockquote,
+        body,
+        button,
+        code,
+        dd,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        html,
+        input,
+        legend,
+        li,
+        ol,
+        p,
+        pre,
+        td,
+        textarea,
+        th,
+        ul {
+            padding: 0;
+            margin: 0;
+            font-weight: 400
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            border: none;
+            font-family: inherit;
+            color: inherit;
+            background: 0 0;
+            -webkit-appearance: none;
+            appearance: none;
+            outline: 0
+        }
+
+        body,
+        html {
+            position: relative;
+            width: 100%;
+            min-width: 300px;
+            height: 100%;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: none;
+            -webkit-overflow-scrolling: touch;
+            word-wrap: break-word;
+            word-break: break-word
+        }
+
+        html {
+            -webkit-perspective: none !important
+        }
+
+        b,
+        strong {
+            font-weight: 700 !important
+        }
+
+        a {
+            color: inherit
+        }
+
+        .sb-body_overflow {
+            height: 100%;
+            overflow: hidden
+        }
+
+        .sb-body_overflow:after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 98;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(51, 51, 51, .8)
+        }
+
+        .sb-body_with-footer .site-wrapper {
+            box-sizing: border-box
+        }
+
+        .sb-body_hide-messenger {
+            overflow: hidden
+        }
+
+        .sb-body_hide-messenger .messenger-button {
+            display: none
+        }
+
+        .sb-padding-top_l {
+            padding-top: 72px
+        }
+
+        .sb-padding-top_m {
+            padding-top: 36px
+        }
+
+        .sb-padding-top_s {
+            padding-top: 20px
+        }
+
+        .sb-padding-bottom_l {
+            padding-bottom: 72px
+        }
+
+        .sb-padding-bottom_m {
+            padding-bottom: 36px
+        }
+
+        .sb-padding-bottom_s {
+            padding-bottom: 20px
+        }
+
+        .sb-hidden {
+            display: none !important
+        }
+
+        @media screen and (max-width:639px) {
+            .sb-hidden-mobile {
+                display: none !important
+            }
+        }
+
+        @media screen and (min-width:300px) {
+            .sb-hidden-mobile-min {
+                display: none !important
+            }
+        }
+
+        @media (min-width:480px) and (max-width:639px) {
+            .sb-hidden-mobile-interval {
+                display: none !important
+            }
+        }
+
+        @media screen and (max-width:959px) {
+
+            .sb-body_with-footer .sb-block_fullscreen:only-child,
+            .sb-body_with-footer .site-wrapper {
+                min-height: calc(100vh - 44px)
+            }
+
+            .sb-hidden-tablet {
+                display: none !important
+            }
+        }
+
+        @media screen and (min-width:640px) {
+            .sb-hidden-tablet-min {
+                display: none !important
+            }
+        }
+
+        @media (min-width:640px) and (max-width:959px) {
+            .sb-hidden-tablet-interval {
+                display: none !important
+            }
+        }
+
+        @media screen and (max-width:1359px) {
+            .sb-hidden-desktop {
+                display: none !important
+            }
+        }
+
+        @media screen and (min-width:960px) {
+
+            .sb-body_with-footer .sb-block_fullscreen:only-child,
+            .sb-body_with-footer .site-wrapper {
+                min-height: calc(100vh - 60px)
+            }
+
+            .sb-hidden-desktop-min {
+                display: none !important
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1359px) {
+            .sb-hidden-desktop-interval {
+                display: none !important
+            }
+        }
+
+        @media screen and (min-width:1360px) {
+            .sb-hidden-desktop-lg-min {
+                display: none !important
+            }
+        }
+
+        .sb-opacity {
+            opacity: .4
+        }
+
+        .sb-align-center {
+            text-align: center
+        }
+
+        .sb-align-left {
+            text-align: left
+        }
+
+        .sb-pre-wrap {
+            white-space: pre-wrap
+        }
+
+        .sb-text-ellipsis-focus:focus {
+            text-overflow: clip !important
+        }
+    </style>
+    <link rel="preconnect" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net">
+    <link rel="stylesheet" href="assets/styles/styles-element.css">
+    <link rel="stylesheet" href="assets/styles/styles-layout.css">
+    <link rel="preload" href="assets/styles/styles-lazy.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/styles-lazy.css" media="print" onload="this.media='all'"><noscript>
+        <link rel="stylesheet" href="assets/styles/styles-lazy.css">
+    </noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&subset=all&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&subset=all&display=swap">
+    <link rel="stylesheet" href="assets/styles/size-m.css">
+    <link rel="stylesheet" href="assets/styles/main-type-13.css">
+    <link rel="stylesheet" href="assets/styles/text-type-2.css">
+    <link rel="stylesheet" href="assets/styles/text-list-type-1.css">
+    <link rel="stylesheet" href="assets/styles/history-type-1.css">
+    <link rel="preload" href="assets/styles/advantages-blocks-type-2.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/advantages-blocks-type-2.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/text-type-4.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/text-type-4.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/call-to-action-type-1.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/call-to-action-type-1.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/bevel-type-1.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/bevel-type-1.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/footer.css" as="style" onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/footer.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/script.css" as="style" onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/script.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/popups.css" as="style" onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/popups.css" media="print" onload="this.media='all'"><noscript>
+        <link rel="stylesheet" href="assets/styles/advantages-blocks-type-2.css">
+        <link rel="stylesheet" href="assets/styles/text-type-4.css">
+        <link rel="stylesheet" href="assets/styles/call-to-action-type-1.css">
+        <link rel="stylesheet" href="assets/styles/bevel-type-1.css">
+        <link rel="stylesheet" href="assets/styles/footer.css">
+        <link rel="stylesheet" href="assets/styles/script.css">
+        <link rel="stylesheet" href="assets/styles/popups.css">
+    </noscript>
+    <link rel="stylesheet" href="assets/styles/styles-helpers.css">
+</head>
+
+<body class="sb-body sb-body_with-footer ubuntu__title open-sans-regular sb-content-size_m sb-buttons-border_round">
+    <div class="site-wrapper" tabindex="0">
+        <section data-type="main" id="main"
+            class="s-main-type-13 sb-block sb-text-dark sb-align-center sb-padding-bottom_s">
+            <div class="sb-background sb-background_clear s-main-type-13__background" style="background: #000000;">
+            </div>
+            <div class="s-main-type-13__container">
+                <div class="sb-container">
+                    <div class="sb-row sb-m-clear-top sb-m-clear-bottom">
+                        <div
+                            class="sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-m-16-bottom sb-col_lg-8 sb-col-offset_lg-2">
+                            <div class="s-main-type-13__image">
+                                <div class="sb-image-square"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                                        src="assets/img/549e5e98-bba8-4d3e-a99d-1c75190816f0-15297754.jpeg"
+                                        alt="Nano Banana Нейрофотошоп в Telegram"></div>
+                            </div>
+                        </div>
+                        <div class="s-main-type-13__text">
+                            <div class="sb-m-15-bottom sb-m-clear-bottom">
+                                <h4 style="color:#ffffff"
+                                    class="sb-col_lg-8 sb-col-offset_lg-2 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-font-h4 sb-font-title">
+                                    Удаляй объекты с фото за секунды — в Telegram</h4>
+                                <br>
+                                <p style="color:#ffffff"
+                                    class="sb-col_lg-8 sb-col-offset_lg-2 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 ">
+                                    Нейросеть nano banana аккуратно удаляет любые объекты и дорисовывает фон</p>
+
+                            </div>
+                            <div
+                                class="sb-col_md-12 sb-col_sm-12 sb-col_xs-12 s-main-type-13__line sb-col_lg-8 sb-col-offset_lg-2">
+                                <svg class="s-main-type-13__line-image" width="16" height="16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 3.887c0-.594 0-.891-.099-1.125a1.25 1.25 0 00-.664-.663C14.004 2 13.707 2 13.113 2H5.888c-.595 0-.892 0-1.125.099a1.25 1.25 0 00-.664.663C4 2.996 4 3.293 4 3.887v4.226c0 .594 0 .891.099 1.125.127.299.365.537.664.663.233.099.53.099 1.125.099h3.8l1.77 1.478c.443.362.739.5.917.52.149.016.396-.04.524-.238.101-.155.101-.44.101-1.012V10c.586 0 1.005 0 1.237-.099a1.25 1.25 0 00.664-.663C15 9.004 15 8.707 15 8.113V3.887zM6 4h7v4H6V4zM1.888 6H2v4a2 2 0 002 2h6v.113c0 .594 0 .891-.099 1.125a1.25 1.25 0 01-.664.663C9.004 14 8.707 14 8.113 14H5.438L3.54 15.478c-.442.362-.738.5-.916.52-.148.016-.396-.04-.524-.238C2 15.605 2 15.32 2 14.748V14c-.586 0-1.005 0-1.237-.099a1.25 1.25 0 01-.664-.663C0 13.004 0 12.707 0 12.113V7.887c0-.594 0-.891.099-1.125A1.25 1.25 0 01.763 6.1C.996 6 1.293 6 1.887 6z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-type="text" id="text" class="s-text-type-2 sb-text-dark sb-padding-top_s sb-padding-bottom_m">
+            <div class="sb-background" style="background: #fff;"></div>
+            <div class="sb-container">
+                <div class="sb-row">
+                    <div class="s-text-type-2__main sb-m-8-bottom sb-col_12">
+                        <div class="s-text-type-2__container">
+                            <div class="s-text-type-2__offset-container">
+                                <div
+                                    class="sb-col_lg-10 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-font-title sb-font-h4 sb-m-17-bottom ">
+                                    Как это работает
+                                </div>
+                                <br>
+                                <div class="sb-row">
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h4 sb-m-17-bottom">
+                                        1. Отправь фото<br>
+                                    </div>
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h5 sb-m-17-bottom">
+                                        Загрузи снимок боту в Telegram<br>
+                                    </div>
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h5 sb-m-17-bottom">
+                                        <img style="max-width: 400px;max-height: 500px;" src="assets/img/screen1.png" />
+                                    </div>
+                                </div>
+
+                                <div class="sb-row">
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h4 sb-m-17-bottom">
+                                        2. Скажи что убрать<br>
+                                    </div>
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h5 sb-m-17-bottom">
+                                        Укажи объект или просто напиши: «удали это».
+                                    </div>
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h5 sb-m-17-bottom">
+                                        <img style="max-width: 400px;max-height: 500px;" src="assets/img/screen2.png" />
+                                    </div>
+                                </div>
+
+                                <div class="sb-row">
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h4 sb-m-17-bottom">
+                                        3. Готово через секунду<br>
+                                    </div>
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h5 sb-m-17-bottom">
+                                        Нейросеть nano banana удалит лишнее и сама дорисует фон </div>
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h5 sb-m-17-bottom">
+                                        <img style="max-width: 400px;max-height: 500px;" src="assets/img/screen3.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-type="text" id="text" class="s-text-type-2 sb-text-dark sb-padding-top_s sb-padding-bottom_m">
+            <div class="sb-background" style="background: #fff;"></div>
+            <div class="sb-container">
+                <div class="sb-row">
+                    <div class="s-text-type-2__main sb-m-8-bottom sb-col_12">
+                        <div class="s-text-type-2__container">
+                            <div class="s-text-type-2__offset-container">
+                                <div class="sb-row">
+                                    <div
+                                        class="sb-col_lg-12 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-align-center sb-font-title sb-font-h5">
+                                        🎁 Переходи в бота и получи бонус - 20 бесплатных генераций!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-type="call-to-action" id="call-to-action"
+            class="s-call-to-action-type-1 sb-text-dark sb-align-center sb-padding-bottom_l">
+            <div class="sb-background" style="background: #ffffff;"></div>
+            <div class="sb-container sb-m-clear-bottom">
+                <div class="s-call-to-action-type-1__buttons sb-m-clear-bottom">
+                    <a id="cta_button" href="tg://resolve?domain=NanoBananaAiPhotoshopBot&start="
+                        class="sb-button-primary sb-button-primary_white s-call-to-action-type-1__button sb-m-20-bottom sb-button-scheme-white"
+                        style="background-color: #2780C9">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi bi-telegram" viewBox="0 0 16 16"
+                            style="margin-top: 8px;margin-right:5px;float: left;">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                        </svg>
+                        <span>Открыть в Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section data-type="bevel" id="bevel" class="s-bevel-type-1 s-bevel-type-1_direction-left">
+            <div class="sb-background sb-background_top-background" style="background: #ffffff;"></div>
+            <div class="sb-background sb-background_bottom-background" style="background: #333333;"></div>
+        </section>
+    </div><template id="popups-stash"></template><template id="popups-images-stash"></template>
+    <script>
+        window.tbConfig = { "inFrame": false, "enableLazyLoading": false, "enableJsLazyLoading": true, "enableDynamicGoods": true, "isPreviewMode": false, "posScriptUrl": "https://forma.tinkoff.ru/static/onlineScript.js", "enableMessengerLazyLoading": true, "usePublicSitesOrdersApi": true, "hasPromocodes": false, "styleChunksSplitting": true, "yandexMapsApiKey": "a9eba83c-b342-4dfe-ab11-2c7cbd6839cb", "cartHash": "U2FsdGVkX19hJgLl5Gcvslq0chiVhoVneWfGct5NvRsfEOcnzX8SM6izIQQcLHoCFyGJmyg91UMS/jTNqG7nE2S3K6xIhk9x93ZJGJ1GFLqiRM9LKiLhcrE7ZhMmiXCl3kE0DgPLo8dcJsTGrFaIxg==", "yaMetricsCounter": "105570035", "staticPath": "https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.917", "enableUserAnimations": false };
+        window.tbConfig.isExported = true; window.tbConfig.exportedApiUrl = 'https://a.tb.ru';
+        window.tbConfig.apiUrl = !window.tbConfig.isExported ? '' : window.tbConfig.exportedApiUrl;
+        window.tbConfig.isModern = 'noModule' in HTMLScriptElement.prototype;
+        (function () { var n, o = "chrome" in window, e = "InstallTrigger" in window; function t(n) { var o = document.createElement("script"); return o.src = "".concat(window.tbConfig.staticPath, "/js/").concat(n), window.tbConfig.isModern && (o.type = "module", o.src = o.src.replace(".js", ".modern.js")), o.defer = !0, o } function d(n) { var o = t(n); document.head.appendChild(o) } window.tbConfig.enableLazyLoading && d("lazy-load.js"), "attachShadow" in Element.prototype || d("lit-polyfill-support.js"), d("webcomponents-loader.js"), o || e || d("smoothscroll.js"), n = t("front.js"), document.addEventListener("DOMContentLoaded", (function () { document.head.appendChild(n) })); })()
+    </script>
+    <section id="yandex-metrica-script" data-type="script">
+        <div class="sb-container sb-container_no-position">
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+                    (function (m, e, t, r, i, k, a) {
+                        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                        m[i].l = 1 * new Date();
+                        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+                        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+                    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105711147', 'ym');
+
+                ym(105711147, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
+            </script>
+            <noscript>
+                <div><img src="https://mc.yandex.ru/watch/105711147" style="position:absolute; left:-9999px;" alt="" />
+                </div>
+            </noscript>
+            <!-- /Yandex.Metrika counter -->
+        </div>
+    </section>
+
+    <script>
+        ym(105711147, 'getClientID', function (clientID) {
+            var button = document.getElementById("cta_button");
+            var params = new URLSearchParams(window.location.search);
+            params.set("ym_client_id", clientID);
+            params.set("ym_counter", 105711147);
+            button.href = "https://bananabot.hackcrafted.com/redirect?" + params.toString();
+
+            button.onclick = function () {
+                ym(105711147, 'reachGoal', 'cta_click');
+            };
+        });
+    </script>
+</body>
+
+</html>
